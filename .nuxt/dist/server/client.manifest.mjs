@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/luisf/Desktop/Universidad/Materias/semestre%206/Desarrollo%20web/dllo-web/Actividad-3%20login%20vercel/AppTask/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

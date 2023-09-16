@@ -3,7 +3,7 @@
  
     <TasksCreateDialog />
 
-    <TasksTable />
+    <tasks-table />
 
 
   </div>

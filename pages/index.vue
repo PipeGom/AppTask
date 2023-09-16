@@ -5,6 +5,9 @@
       <p>Esta es una aplicación que permite gestionar las tareas de los estudiantes</p>
 
       <a href="/tareas">Click para iniciar (sin nuxtLink)</a>
+      <br>
+      <br>
+      <a href="/Loggin">Click para iniciar sesion</a>
 <br>
 <br>
       <NuxtLink to="/tareas">
@@ -14,6 +17,7 @@
 
   </div>
 </template>
+
 <script>
 definePageMeta({
   layout: "blank",
