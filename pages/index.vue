@@ -16,9 +16,12 @@
     </center>
 
   </div>
+
 </template>
 
 <script>
+  
+
 definePageMeta({
   layout: "blank",
 });

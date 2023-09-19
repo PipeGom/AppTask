@@ -1,20 +1,26 @@
 <template>
- 
-    <div class="d-flex align-center justify-center" style="height: 100vh">
-        
-        <v-sheet width="400" class="mx-auto">
-            <v-form fast-fail @submit.prevent="login">
-                <v-text-field v-model="username" label="User Name"></v-text-field>
+<div class="box">
+<v-sheet width="300" class="mx-auto"  >
 
-                <v-text-field v-model="password" label="password"></v-text-field>
-                <a href="#" class="text-body-2 font-weight-regular">Forgot Password?</a>
+    <v-form @submit.prevent class="form" >
+      <v-text-field
+        v-model="firstName"
+        :rules="rules"
+        label="User Name"
+        class="custom-text-field"
+      ></v-text-field>
 
-                <v-btn type="submit" color="primary" block class="mt-2">Sign in</v-btn>
-
-            </v-form>
-           
-        </v-sheet>
-    </div>
+      <v-text-field
+        v-model="firstName"
+        :rules="rules"
+        label="Password"
+        class="custom-text-field"
+      ></v-text-field>
+    
+      <v-btn type="submit" block class="mt-2" style="width: 70%;">iniciar sesion</v-btn>
+    </v-form>
+  </v-sheet>
+</div>
 
 </template>
 <script>
@@ -22,4 +28,18 @@ definePageMeta({
     layout: "blank",
   });
 </script>
+<style>
+.box{
+    display: flex; align-items: center; justify-content: center;   height: 100vh; 
+    background-color:#60aaff;
+}
+.form{ 
+  background-color: #60aaff;
+  align-items: center;
+  justify-content: center;
+}
+.custom-text-field .v-input__control {
+  background-color: azure; 
+}
 
+</style>
