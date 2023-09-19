@@ -25,4 +25,20 @@
 definePageMeta({
   layout: "blank",
 });
+
+import SvgIcon from '@jamescoyle/vue-icon';
+import { mdiAccount } from '@mdi/js';
+
+export default {
+  name: "my-component",
+  components: {
+    SvgIcon
+  },
+  data() {
+    return {
+       path: mdiAccount,
+    }
+  }
+}
+
 </script>
